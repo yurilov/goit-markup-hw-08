@@ -1,0 +1,13 @@
+.logo {
+  font-family: $logo-font-family;
+  color: $accent-color;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &--black {
+    color: $logo-color;
+  }
+  &--white {
+    color: $primary-white-color;
+  }
+}

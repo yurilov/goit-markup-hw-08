@@ -1,0 +1,32 @@
+.team-social {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+
+  .team-social__link {
+    display: block;
+    padding: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $accent-color;
+    }
+  }
+}
+
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-color;
+  transition: fill $transition-duration $timing-function;
+
+  .team-social__link:hover &,
+  .team-social__link:focus & {
+    fill: $primary-white-color;
+  }
+}

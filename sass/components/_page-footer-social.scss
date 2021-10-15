@@ -1,0 +1,38 @@
+.join__list {
+  display: flex;
+}
+
+.join__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__social-link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $accent-color;
+  }
+}
+
+.join__social-icon {
+  width: 20px;
+  height: 20px;
+  fill: $primary-white-color;
+}

@@ -1,0 +1,40 @@
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1 * $gap;
+  margin-left: -1 * $gap;
+}
+
+.clients__item {
+  flex-basis: calc(100% / 6 - 30px);
+  margin-top: $gap;
+  margin-left: $gap;
+}
+
+.clients__link {
+  display: flex;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+  transition: border $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: $icon-color;
+  transition: fill $transition-duration $timing-function;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
+  }
+}

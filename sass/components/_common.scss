@@ -1,0 +1,50 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $main-font-family;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button {
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px $button-shadow;
+  border-radius: 4px;
+
+  transition: background-color $transition-duration $timing-function;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $button-hover;
+}
+
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $title-text-color;
+}

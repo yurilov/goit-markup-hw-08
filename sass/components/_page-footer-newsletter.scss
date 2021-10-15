@@ -1,0 +1,49 @@
+.newsletter {
+  margin-left: 93px;
+
+  .newsletter__form {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .newsletter__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter__input {
+    padding: 14px 16px;
+    margin-top: 20px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+    background-color: transparent;
+    box-shadow: inset 0px 4px 4px $button-shadow;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $secondary-white-color;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      color: $secondary-white-color;
+    }
+  }
+
+  .newsletter__button {
+    padding: 10px 29px;
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+  }
+
+  .newsletter__icon {
+    margin-left: 10px;
+  }
+}
