@@ -35,6 +35,7 @@
     letter-spacing: 0.02em;
     color: $title-text-color;
     transition: color $transition-duration $timing-function;
+
     &:hover,
     &:focus {
       outline: none;
@@ -49,6 +50,7 @@
   .site-nav__link--current {
     outline: none;
     color: $accent-color;
+
     &::after {
       content: '';
       display: block;
@@ -81,6 +83,7 @@
     letter-spacing: 0.02em;
     color: $primary-text-color;
     transition: color $transition-duration $timing-function;
+
     &:hover,
     &:focus {
       outline: none;
