@@ -1,5 +1,9 @@
 .about {
-  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 
   .about__list {
     display: flex;

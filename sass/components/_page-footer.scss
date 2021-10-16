@@ -3,8 +3,14 @@
   padding-bottom: 60px;
   background-color: $footer-background-color;
 
+  @media screen and (max-width: ($tablet - 1px)) {
+    width: $mobile;
+    margin: 0 auto;
+  }
+
   & .container {
-    display: flex;
-    align-items: baseline;
+    @media screen and (max-width: ($tablet - 1px)) {
+      text-align: center;
+    }
   }
 }

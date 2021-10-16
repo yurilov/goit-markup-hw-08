@@ -1,16 +1,9 @@
 .team {
   background-color: $secondary-background-color;
 
-  .team__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -1 * $gap;
-    margin-left: -1 * $gap;
-  }
-
-  .team__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-top: $gap;
-    margin-left: $gap;
+  @media screen and (max-width: ($tablet - 1px)) {
+    .team__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }

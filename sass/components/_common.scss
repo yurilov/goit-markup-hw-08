@@ -6,15 +6,23 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0 auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    margin: 0 auto;
+    width: $mobile;
+  }
 }
 
 .button {

@@ -1,9 +1,10 @@
 .newsletter {
-  margin-left: 93px;
-
   .newsletter__form {
-    display: flex;
-    align-items: flex-end;
+    @media screen and (max-width: ($tablet - 1px)) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   .newsletter__label {
@@ -14,6 +15,10 @@
     color: $primary-white-color;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-top: 60px;
+    }
   }
 
   .newsletter__input {
@@ -41,6 +46,10 @@
     display: flex;
     align-items: center;
     margin-left: 12px;
+
+    @media screen and (max-width: ($tablet - 1px)) {
+      margin-top: 20px;
+    }
   }
 
   .newsletter__icon {

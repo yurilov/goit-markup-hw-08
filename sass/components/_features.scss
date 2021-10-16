@@ -1,12 +1,8 @@
-.features__list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .features__item {
-  width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: ($tablet - 1px)) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -32,6 +28,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $title-text-color;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    text-align: center;
+  }
 }
 
 .features__text {
