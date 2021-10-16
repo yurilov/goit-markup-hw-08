@@ -1,7 +1,11 @@
 .site-nav {
-  display: none;
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: none;
+  }
 }
 
 .header-contacts {
-  display: none;
+  @media screen and (max-width: ($tablet - 1px)) {
+    display: none;
+  }
 }
