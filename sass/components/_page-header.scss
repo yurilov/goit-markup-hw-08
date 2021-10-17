@@ -1,11 +1,112 @@
+.page-header {
+  border-bottom: 1px solid $header-border;
+
+  & .container {
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.nav {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.logo--top {
+  @media screen and (min-width: $tablet) {
+    display: block;
+    margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 .site-nav {
   @media screen and (max-width: ($tablet - 1px)) {
     display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  .site-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .site-nav__link {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+    transition: color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-color;
+    }
+  }
+
+  .site-nav__item {
+    position: relative;
+  }
+
+  .site-nav__link--current {
+    outline: none;
+    color: $accent-color;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      width: 100%;
+      height: 4px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }
 
 .header-contacts {
   @media screen and (max-width: ($tablet - 1px)) {
     display: none;
+  }
+
+  margin-left: auto;
+
+  .header-contacts__item:not(:last-child) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .header-contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    transition: color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $accent-color;
+    }
+  }
+
+  .header-contacts__icon {
+    fill: currentColor;
+    margin-right: 8px;
   }
 }
