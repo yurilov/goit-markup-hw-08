@@ -1,8 +1,29 @@
+.features__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+
 .features__item {
   @media screen and (max-width: ($tablet - 1px)) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 

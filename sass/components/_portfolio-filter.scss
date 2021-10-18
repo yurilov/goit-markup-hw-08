@@ -1,6 +1,6 @@
 .filter {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 
   @media screen and (max-width: ($tablet - 1px)) {
     flex-wrap: wrap;
@@ -9,10 +9,25 @@
     margin-left: -8px;
   }
 
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 50px;
+  }
+
   .filter__item {
     @media screen and (max-width: ($tablet - 1px)) {
       margin-top: 15px;
       margin-left: 8px;
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: $tablet) {
+        margin-right: 8px;
+      }
     }
   }
 

@@ -4,8 +4,16 @@
 }
 
 .contacts {
+  @media screen and (min-width: $desktop) {
+    margin-right: 70px;
+  }
+
   .contacts__item:not(:last-child) {
     margin-bottom: 8px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 9 px;
+    }
   }
 
   .contacts__link {
@@ -24,5 +32,9 @@
       outline: none;
       color: $accent-color;
     }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    text-align: center;
   }
 }

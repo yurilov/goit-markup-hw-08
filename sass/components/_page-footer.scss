@@ -12,5 +12,15 @@
     @media screen and (max-width: ($tablet - 1px)) {
       text-align: center;
     }
+
+    @media screen and (min-width: $tablet) {
+      display: flex;
+      align-items: baseline;
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }

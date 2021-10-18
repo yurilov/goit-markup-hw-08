@@ -9,6 +9,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   transition: opacity $transition-duration $timing-function,
     visibility $transition-duration $timing-function;
+
   &.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -28,8 +29,13 @@
   border-radius: 4px;
   transition: transform $transition-duration $timing-function;
   z-index: 800;
-  @media screen and (max-width: ($tablet - 1px)) {
+
+  @media screen and (max-width: ($desktop - 1px)) {
     width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 528px;
   }
 
   .backdrop.is-hidden & {

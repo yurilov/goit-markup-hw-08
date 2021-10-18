@@ -12,6 +12,14 @@
   @media screen and (max-width: ($tablet - 1px)) {
     flex-basis: calc(100% / 2 - 30px);
   }
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .clients__link {

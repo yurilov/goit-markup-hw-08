@@ -22,6 +22,10 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 93px;
+  }
 }
 
 .site-nav {
@@ -82,11 +86,19 @@
     display: none;
   }
 
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+
   margin-left: auto;
 
   .header-contacts__item:not(:last-child) {
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
       margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
     }
   }
 
@@ -102,6 +114,13 @@
     &:focus {
       outline: none;
       color: $accent-color;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: inline-flex;
+      align-items: center;
+      padding-bottom: 32px;
+      padding-top: 32px;
     }
   }
 

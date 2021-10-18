@@ -1,9 +1,22 @@
 .newsletter {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
+
   .newsletter__form {
+    display: flex;
     @media screen and (max-width: ($tablet - 1px)) {
-      display: flex;
       flex-direction: column;
       align-items: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+      align-items: flex-end;
     }
   }
 
@@ -39,16 +52,23 @@
       line-height: 1.25;
       color: $secondary-white-color;
     }
+
+    @media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+      width: 450px;
+    }
   }
 
   .newsletter__button {
     padding: 10px 29px;
     display: flex;
     align-items: center;
-    margin-left: 12px;
 
-    @media screen and (max-width: ($tablet - 1px)) {
-      margin-top: 20px;
+    @media screen and (max-width: ($desktop - 1px)) {
+      margin: 20px auto 0 auto;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-left: 12px;
     }
   }
 

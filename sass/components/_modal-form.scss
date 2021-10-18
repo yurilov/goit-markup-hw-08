@@ -11,6 +11,10 @@
   text-align: center;
 
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form__field {
@@ -43,7 +47,7 @@
     border-color: $accent-color;
   }
 
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: $desktop - 1px) {
     width: 370px;
   }
 }
@@ -81,7 +85,7 @@
     border-color: $accent-color;
   }
 
-  @media screen and (max-width: $tablet - 1px) {
+  @media screen and (max-width: $desktop - 1px) {
     width: 370px;
   }
 }
@@ -91,6 +95,8 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .form__custom-checkbox {
@@ -123,6 +129,12 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   margin-left: auto;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin-left: 7px;
+  }
 }
 
 .form__checkbox-link {

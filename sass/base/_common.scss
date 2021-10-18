@@ -17,6 +17,10 @@ body {
   @media screen and (min-width: $tablet) {
     width: $tablet;
   }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .section {
@@ -55,8 +59,12 @@ body {
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: $title-text-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+  }
 }
