@@ -70,6 +70,12 @@ body {
     width: 480px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .button {
   min-width: 200px;
@@ -797,6 +803,7 @@ body {
 
 .about {
   display: none;
+  padding-top: 0;
 }
 @media screen and (min-width: 1200px) {
   .about {
