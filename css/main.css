@@ -1342,30 +1342,40 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -30px;
+  margin-left: -30px;
+}
 @media screen and (min-width: 768px) {
   .portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
   }
 }
 
+.portfolio__item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 @media screen and (min-width: 768px) {
   .portfolio__item {
     width: calc(100% / 2 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     width: calc(100% / 3 - 30px);
-    margin-top: 30px;
-    margin-left: 30px;
   }
 }
 
@@ -1390,7 +1400,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 767px) {
   .portfolio__thumb {
     min-width: 450px;
     min-height: 294px;
@@ -1430,6 +1440,11 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__item:first-child .portfolio__container {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio__title {
