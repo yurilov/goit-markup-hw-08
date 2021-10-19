@@ -49,7 +49,7 @@ body {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -282,6 +282,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -292,7 +295,6 @@ body {
 }
 
 .menu-toggle {
-  margin-left: auto;
   padding: 0;
   border: none;
   background-color: #ffffff;
@@ -324,8 +326,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -570,7 +574,7 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .newsletter .newsletter__form {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
