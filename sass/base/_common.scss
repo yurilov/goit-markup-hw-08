@@ -11,11 +11,11 @@ body {
   margin: 0 auto;
 
   @media screen and (max-width: ($tablet - 1px)) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desktop) {
@@ -29,7 +29,7 @@ body {
 
   @media screen and (max-width: ($tablet - 1px)) {
     margin: 0 auto;
-    width: $mobile;
+    max-width: $mobile;
   }
 
   @media screen and (min-width: $desktop) {
