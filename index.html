@@ -125,15 +125,25 @@
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="about__list list">
                     <li class="about__item">
-                        <img src="./images/sample1.jpg" alt="Десктопные приложения" width="370" class="about__img">
+                        <picture>
+                            <source srcset="./images/sample1-370.jpg 1x, ./images/sample1-370@2x.jpg 2x">
+                            <img src="./images/sample1-370.jpg" alt="Десктопные приложения" width="370" class="about__img">
+                        </picture>
                         <p class="about__label">Десктопные приложения</p>
                     </li>
                     <li class="about__item">
-                        <img src="./images/sample2.jpg" alt="Мобильные приложения" width="370" class="about__img">
+                        <picture>
+                            <source srcset="./images/sample2-370.jpg 1x, ./images/sample2-370@2x.jpg 2x">
+                            <img src="./images/sample2-370.jpg" alt="Мобильные приложения" width="370" class="about__img">
+                        </picture>                        
                         <p class="about__label">Мобильные приложения</p>
                     </li>
                     <li class="about__item">
-                        <img src="./images/sample3.jpg" alt="Дизайнерские решения" width="370" class="about__img">
+                        <picture>
+                            <source srcset="./images/sample3-370.jpg 1x, ./images/sample3-370@2x.jpg 2x">
+                            <img src="./images/sample3-370.jpg" alt="Дизайнерские решения" width="370" class="about__img">
+                        </picture>
+                        
                         <p class="about__label">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -147,8 +157,13 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <div class="team-member"> 
-                            <img src="./images/productdesigner.jpg" alt="Продакт дизайнер Игорь Демьяненко" width="270" class="team-member__img">
+                        <div class="team-member">
+                            <picture>
+                                <source srcset="./images/productdesigner-270.jpg 270w, ./images/productdesigner-270@2x.jpg 540w" media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
+                                <source srcset="./images/productdesigner-354.jpg 354w, ./images/productdesigner-354@2x.jpg 708w" media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
+                                <source srcset="./images/productdesigner-450.jpg 450w, ./images/productdesigner-450@2x.jpg 900w" media="(max-width: 765px)" sizes="(min-width: 450px) 450px, 100vw">                              
+                                <img src="./images/productdesigner-270.jpg" alt="Продакт дизайнер Игорь Демьяненко" class="team-member__img">
+                            </picture>
                             <h3 class="team-member__title">Игорь Демьяненко</h3>
                             <p lang="en" class="team-member__text">Product Designer</p>
                             <ul class="team-social list">
@@ -185,7 +200,16 @@
                     </li>
                     <li class="team__item">
                         <div class="team-member">
-                            <img src="./images/frontenddeveloper.jpg" alt="Фронт-энд разработчик Ольга Репина" width="270" class="team-member__img">
+                            <picture>
+                                <source srcset="./images/frontenddeveloper-270.jpg 270w, ./images/frontenddeveloper-270@2x.jpg 540w"
+                                    media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
+                                <source srcset="./images/frontenddeveloper-354.jpg 354w, ./images/frontenddeveloper-354@2x.jpg 708w"
+                                    media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
+                                <source srcset="./images/frontenddeveloper-450.jpg 450w, ./images/frontenddeveloper-450@2x.jpg 900w"
+                                    media="(max-width: 765px)" sizes="(min-width: 450px) 450px, 100vw">
+                                <img src="./images/frontenddeveloper-450.jpg" alt="Фронт-энд разработчик Ольга Репина" class="team-member__img">
+                            </picture>
+                            
                             <h3 class="team-member__title">Ольга Репина</h3>
                             <p lang="en" class="team-member__text">Frontend Developer</p>
                             <ul class="team-social list">
@@ -222,7 +246,15 @@
                     </li>
                     <li class="team__item">
                         <div class="team-member">
-                            <img src="./images/marketing.jpg" alt="Маркетолог Николай Тарасов" width="270" class="team-member__img">
+                            <picture>
+                                <source srcset="./images/marketing-270.jpg 270w, ./images/marketing-270@2x.jpg 540w"
+                                    media="(min-width: 1200px)" sizes="(min-width: 270px) 270px, 100vw">
+                                <source srcset="./images/marketing-354.jpg 354w, ./images/marketing-354@2x.jpg 708w"
+                                    media="(min-width: 768px)" sizes="(min-width: 354px) 354px, 100vw">
+                                <source srcset="./images/marketing-450.jpg 450w, ./images/marketing-450@2x.jpg 900w"
+                                    media="(max-width: 765px)" sizes="(min-width: 450px) 450px, 100vw">
+                                <img src="./images/marketing-450.jpg" alt="Маркетолог Николай Тарасов" class="team-member__img">
+                            </picture>
                             <h3 class="team-member__title">Николай Тарасов</h3>
                             <p lang="en" class="team-member__text">Marketing</p>
                             <ul class="team-social list">
@@ -259,7 +291,16 @@
                     </li>
                     <li class="team__item">
                         <div class="team-member">
-                            <img src="./images/uidesigner.jpg" alt="UI дизайнер Михаил Ермаков" width="270" class="team-member__img">
+                            <picture>
+                                <source srcset="./images/uidesigner-270.jpg 270w, ./images/uidesigner-270@2x.jpg 540w" media="(min-width: 1200px)"
+                                    sizes="(min-width: 270px) 270px, 100vw">
+                                <source srcset="./images/uidesigner-354.jpg 354w, ./images/uidesigner-354@2x.jpg 708w" media="(min-width: 768px)"
+                                    sizes="(min-width: 354px) 354px, 100vw">
+                                <source srcset="./images/uidesigner-450.jpg 450w, ./images/uidesigner-450@2x.jpg 900w" media="(max-width: 765px)"
+                                    sizes="(min-width: 450px) 450px, 100vw">
+                                <img src="./images/uidesigner-450.jpg" alt="UI дизайнер Михаил Ермаков" class="team-member__img">
+                            </picture>
+                            
                             <h3 class="team-member__title">Михаил Ермаков</h3>
                             <p lang="en" class="team-member__text">UI Designer</p>
                             <ul class="team-social list">
