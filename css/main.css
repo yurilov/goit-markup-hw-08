@@ -49,8 +49,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  min-width: 320px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
   }
@@ -69,10 +70,10 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .section {
-    margin: 0 auto;
     width: 480px;
   }
 }
@@ -415,9 +416,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-left: -10px;
+  margin-top: -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu-social .menu-social__item {
   margin-left: 10px;
+  margin-top: 10px;
 }
 .menu-social .menu-social__item:not(:first-child) {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
@@ -436,8 +441,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  min-width: 320px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .page-footer {
     width: 480px;
     margin: 0 auto;
@@ -685,6 +691,7 @@ img {
 }
 
 .hero {
+  min-width: 320px;
   height: 400px;
   margin: 0 auto;
   background-color: #c4c4c4;
@@ -703,7 +710,7 @@ img {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bcg-480@2x.jpg);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .hero {
     width: 480px;
   }
@@ -738,7 +745,6 @@ img {
   }
 }
 .hero .hero__title {
-  width: 360px;
   margin: auto auto 30px auto;
   font-weight: 900;
   font-size: 26px;
@@ -747,6 +753,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__title {

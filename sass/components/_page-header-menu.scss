@@ -117,9 +117,13 @@
 .menu-social {
   display: flex;
   margin-left: -10px;
+  margin-top: -10px;
+
+  flex-wrap: wrap;
 
   .menu-social__item {
     margin-left: 10px;
+    margin-top: 10px;
 
     &:not(:first-child) {
       border-left: 1px solid rgba(33, 33, 33, 0.2);

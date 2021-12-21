@@ -15,8 +15,9 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  min-width: 320px;
 
-  @media screen and (max-width: ($tablet - 1px)) {
+  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
     width: $mobile;
   }
 
@@ -32,9 +33,9 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0 auto;
 
-  @media screen and (max-width: ($tablet - 1px)) {
-    margin: 0 auto;
+  @media screen and (min-width: $mobile) and (max-width: ($tablet - 1px)) {
     width: $mobile;
   }
 
