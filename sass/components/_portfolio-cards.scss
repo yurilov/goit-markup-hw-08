@@ -21,6 +21,10 @@
   @media screen and (min-width: $desktop) {
     width: calc(100% / 3 - 30px);
   }
+
+  &.portfolio__item--hidden {
+    display: none;
+  }
 }
 
 .portfolio__link {
@@ -59,7 +63,10 @@
   font-size: 18px;
   line-height: 1.56;
   color: $primary-white-color;
-  background-image: linear-gradient(rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9));
+  background-image: linear-gradient(
+    rgba(33, 150, 243, 0.9),
+    rgba(33, 150, 243, 0.9)
+  );
   transform: translateY(100%);
   transition: transform $transition-duration $timing-function;
 

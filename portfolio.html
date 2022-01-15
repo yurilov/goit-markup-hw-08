@@ -66,15 +66,15 @@
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <ul class="filter list">
-                    <li class="filter__item"><button type="button" class="filter__button filter__button--active">Все</button></li>
-                    <li class="filter__item"><button type="button" class="filter__button">Веб-сайты</button></li>
-                    <li class="filter__item"><button type="button" class="filter__button">Приложения</button></li>
-                    <li class="filter__item"><button type="button" class="filter__button">Дизайн</button></li>
-                    <li class="filter__item"><button type="button" class="filter__button">Маркетинг</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button filter__button--active" data-type="js-all">Все</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button" data-type="js-site">Веб-сайты</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button" data-type="js-app">Приложения</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button" data-type="js-design">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="filter__button" data-type="js-marketing">Маркетинг</button></li>
                 </ul>
                 
                 <ul class="portfolio list">
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-site">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -98,7 +98,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-design">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -123,7 +123,7 @@
             
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-app">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -147,7 +147,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-marketing">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -171,7 +171,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-app">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -195,7 +195,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-app">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -220,7 +220,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-design">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -244,7 +244,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-marketing">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -268,7 +268,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="portfolio__item">
+                    <li class="portfolio__item js-app">
                         <a href="" class="portfolio__link link">
                             <div class="portfolio__thumb">
                                 <p class="portfolio__desription">
@@ -409,7 +409,8 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
-    <script src="./js/mobile-menu.js"></script>
+        <script src="./js/portfolio-filter.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
 </body>
 
 </html>

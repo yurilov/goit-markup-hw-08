@@ -1418,6 +1418,9 @@ img {
     width: calc(100% / 3 - 30px);
   }
 }
+.portfolio__item.portfolio__item--hidden {
+  display: none;
+}
 
 .portfolio__link {
   display: block;
